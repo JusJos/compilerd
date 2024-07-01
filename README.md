@@ -9,9 +9,11 @@
 
 
 ## Changes Made
-Compilerd is a online code judge for evaluating code submissions passed to it. It compiles and executes code in several languages and returns the result and various other properties in the response. The judge supports several languages including C++, Python, C, JavaScript (Node.js) and Java. 
+Compilerd is an online code judge for evaluating code submissions passed to it. It compiles and executes code in several languages and returns the result and various other properties in the response. The judge supports several languages including C++, Python, C, JavaScript (Node.js) and Java. 
 
-Functionality of GO and PHP are added, changes made to the following configs:
+The image was built using docker, used OPEN_API KEYS, Corrected versions of various dependencies, used Postman for query execution, and configured language scripts for support. 
+
+The functionality of GO and PHP are added, and changes are made to the following configs:
 app.config.js
 language.config.js
 test.js
