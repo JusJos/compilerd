@@ -8,17 +8,6 @@
 [![Issues][issues-shield]][issues-url] -->
 
 
-## Table of contents : 
-<ol>
-  <li>
-    <a href="#about-the-project">Changes Made</a>
-  </li>
-    
-
-</ol>
-
-
-
 ## Changes Made
 Compilerd is a online code judge for evaluating code submissions passed to it. It compiles and executes code in several languages and returns the result and various other properties in the response. The judge supports several languages including C++, Python, C, JavaScript (Node.js) and Java. 
 
