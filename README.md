@@ -85,6 +85,40 @@ We will run the project locally and try to make a request to see a sample use ca
 
 ### tests.js :
 ```
+{
+        name: 'go: addition',
+        reqObject: {
+            language: 'go',
+            script: `
+package main
+import "fmt"
+func main() {
+var a, b int
+fmt.Scanf("%d %d", &a, &b)
+fmt.Println(a + b)
+}`,
+            stdin: '5 3',
+        },
+        expectedResponse: {
+            val: '8\n',
+            status: 200,
+            error: 0,
+        },
+
+name: 'php: addition',
+        reqObject: {
+            language: 'php',
+            script: `<?php
+fscanf(STDIN, "%d %d", $a, $b);
+echo $a + $b;
+?>`,
+            stdin: '5 3',
+        },
+        expectedResponse: {
+            val: '8',
+            status: 200,
+            error: 0,
+        },
 
 ```
  
