@@ -13,17 +13,6 @@
   <li>
     <a href="#about-the-project">Changes Made</a>
   </li>
-  <li><a href="#quick-usage">Quick Usage</a></li>
-  <li><a href="#contribution">Contribution</a>
-    <ul>    
-        <li><a href="#Prerequisites">Prerequisites</a></li>
-    </ul>
-    <ul>    
-        <li><a href="#setting-up">Setting up</a></li>
-    </ul>
-    <ul>    
-        <li><a href="#making-changes">Changes Made</a></li>
-    </ul>
     
 
 </ol>
@@ -36,6 +25,8 @@ Compilerd is a online code judge for evaluating code submissions passed to it. I
 Functionality of GO and PHP are added, changes made to the following configs:
 app.config.js
 language.config.js
+test.js
+code.services.js
 
 
 ## Quick Usage :
@@ -47,13 +38,8 @@ We will run the project locally and try to make a request to see a sample use ca
   - Run the docker container with the built image : ```docker run -p 3000:3000 -e OPENAI_API_KEY=<your-api-key> -e ALLOWED_RAM=<allowed-ram-value> <image-name>```
   - Now we have the service running on localhost ```http://localhost:3000/```
   - Open postman and try to make a POST request on ```http://localhost:3000/api/execute/``` with given payload :
-    ```json 
-        {
-            "language" : "nodejs", 
-            "script" : "console.log('hello world')"
-        } 
-    ```
-  - Added Language.Config:
+  
+  - Added to Language.Config:
   ```
   [GO]: {
         compile: 'go build -o solution solution.go',
@@ -97,15 +83,11 @@ We will run the project locally and try to make a request to see a sample use ca
   - Summary can be seen on the console when all the tests have finished.
 
 
-### Guidelines :
- - Provide Detailed Pull Requests
-   - Clearly describe the problem you're solving or the feature you're adding
-   - Provide context, background, and any relevant information
- - Adhere to the project's coding standards and style guides
- - Update documentation as needed for your changes
-   - Ensure that your code is well-documented and easy for others to understand
- - Ensure that your contributions are well-tested
- - Maintain consistency with the existing codebase
+### tests.js :
+```
+
+```
+ 
 
 
 
